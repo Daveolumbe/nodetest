@@ -1,6 +1,5 @@
 const lib = require('../lib');
 
-
 describe('abosulte', () => {
 it('should return positive number if input is +ve', () => {
     const result = lib.abosulte(1);
@@ -48,5 +47,13 @@ describe('getCurrency', () => {
         // Ideal way
         expect(result).toEqual(expect.arrayContaining(['GBP', 'EUR', 'USD']));
 
+    });
+});
+
+describe('getProduct', () => {
+    it('should return product with given Id', () => {
+        const result = lib.getProduct(6);
+        expect(result).toEqual({id: 6, product: 10 });
+        expect(result).toMatchObject({id: 6, product: 10 });
     });
 });
