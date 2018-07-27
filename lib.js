@@ -3,14 +3,13 @@
 
 //Testing number
 module.exports.abosulte = (number) => {
-    if (number >= 0) return number;
-        return -number;
+    return ((number >= 0) ? number : -number);
 }
 
 // //Testing strings
-// export const greet = (name) => {
-//     return 'Welcome ' + name;
-// }
+export const greet = (name) => {
+    return 'Welcome ' + name;
+}
 
 // // Testing Arrays 
 // export const getCurrencies = () => {
