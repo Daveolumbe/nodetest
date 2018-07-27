@@ -7,11 +7,11 @@ module.exports.abosulte = (number) => {
 }
 
 // //Testing strings
-export const greet = (name) => {
-    return 'Welcome ' + name;
+module.exports.greet = (name) => {
+    return 'Welcome ' + name + '!';
 }
 
 // // Testing Arrays 
-// export const getCurrencies = () => {
+// module.exports.getCurrencies = () => {
 //     return ['USD', 'GBP', 'EUR'];
 // }

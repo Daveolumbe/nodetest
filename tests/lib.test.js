@@ -17,3 +17,11 @@ it('should return zero number if input is zero', () => {
     expect(result).toBe(0);
 });  
 });
+
+
+describe('greet', () => {
+    it('should return the greeting message', () => {
+        const result = lib.greet('Mosh');
+        expect(result).toMatch(/Mosh/);
+    });
+});
