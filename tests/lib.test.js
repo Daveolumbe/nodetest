@@ -54,6 +54,6 @@ describe('getProduct', () => {
     it('should return product with given Id', () => {
         const result = lib.getProduct(6);
         expect(result).toEqual({id: 6, product: 10 });
-        expect(result).toMatchObject({id: 6, product: 10 });
+        expect(result).toMatchObject({id: 6, product: 10 }); // better way
     });
 });
