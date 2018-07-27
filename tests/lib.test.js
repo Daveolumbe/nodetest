@@ -57,3 +57,9 @@ describe('getProduct', () => {
         expect(result).toMatchObject({id: 6, product: 10 }); // better way
     });
 });
+
+describe('registerUser', () => {
+    it('should throw exception if username is falsy', () => {
+        expect(() => {lib.registerUser(null)}).toThrow();
+    });
+});
